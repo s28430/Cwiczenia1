@@ -9,4 +9,12 @@
         Console.WriteLine(str);
         int x = 12;
     }
+
+    private static double GetAverage(int[] array)
+    {
+        int total = 0;
+        foreach (int num in array)
+            total += num;
+        return (double) total / array.Length;
+    }
 }
