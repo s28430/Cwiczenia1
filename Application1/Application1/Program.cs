@@ -16,8 +16,8 @@
     private static double GetAverage(int[] array)
     {
         int total = 0;
-        foreach (int n in array)
-            total += n;
+        foreach (int number in array)
+            total += number;
         return (double) total / array.Length;
     }
 
