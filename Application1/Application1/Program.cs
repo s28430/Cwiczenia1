@@ -8,6 +8,9 @@
         
         Console.WriteLine(str);
         int x = 12;
+
+        int[] arr = { 1, 5, 2, 6, 1 };
+        Console.WriteLine(GetMax(arr));
     }
 
     private static double GetAverage(int[] array)
@@ -16,5 +19,15 @@
         foreach (int num in array)
             total += num;
         return (double) total / array.Length;
+    }
+
+    private static int GetMax(int[] arr)
+    {
+        int max = arr[0];
+
+        for (int i = 1; i < arr.Length; i++)
+            if (arr[i] > max)
+                max = arr[i];
+        return max;
     }
 }
